@@ -256,6 +256,7 @@ ul {
 .projects,
 .partners {
   padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .projects-title,
@@ -549,7 +550,7 @@ footer {
 }
 
 .footer-soc-networks {
-  padding-left: 70px;
+  margin-left: 70px;
 }
 
 .word-studio-2 {
