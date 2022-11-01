@@ -11,6 +11,7 @@
   --bottom-color: #ececec;
   --icon-color: #afb1b8;
   --portfolio-definition: rgba(33, 150, 243, 0.9);
+  --banner:rgba(47, 48, 58, 0.4);
 }
 
 body {
@@ -165,7 +166,7 @@ ul {
 /*-------------------hero-------------------*/
 
 .banner {
-  background: var(--background-hero-footer);
+  background-color: var(--banner);
   padding: 200px 0;
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
     url(../img/hero-bg.jpg);
@@ -274,7 +275,11 @@ ul {
   justify-content: space-evenly;
 }
 .project-link{
-  cursor: pointer;
+  display: block;
+}
+.project-link:hover,:focus{
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .projects-card {
@@ -474,9 +479,6 @@ main {
 .project-item {
   position: relative;
 }
-
-.project-item:hover .definition-text {}
-
 .project-list {
   display: flex;
   flex-wrap: wrap;
@@ -531,11 +533,7 @@ main {
   height: 100%;
 }
 
-.project-card:hover,
-.project-card:focus {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}
+
 
 /*-------------------footer-------------------*/
 
